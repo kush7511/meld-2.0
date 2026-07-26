@@ -22,7 +22,7 @@ class StoryRow extends StatelessWidget {
           final contact = contacts[index - 1];
           return _StoryItem(name: contact.name, isOnline: contact.isOnline);
         },
-        separatorBuilder: (_, __) => const SizedBox(width: 14),
+        separatorBuilder: (_, _) => const SizedBox(width: 14),
         itemCount: contacts.length + 1,
       ),
     );

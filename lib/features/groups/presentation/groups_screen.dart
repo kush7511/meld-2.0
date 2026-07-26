@@ -66,7 +66,7 @@ class GroupsScreen extends ConsumerWidget {
                   ),
                 );
               },
-              separatorBuilder: (_, __) => const SizedBox(height: 12),
+              separatorBuilder: (_, _) => const SizedBox(height: 12),
               itemCount: groups.length + 1,
             ),
     );
