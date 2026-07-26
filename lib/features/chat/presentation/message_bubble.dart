@@ -133,7 +133,7 @@ class ImageMessage extends StatelessWidget {
         child: Image.network(
           message.imageUrl!,
           fit: BoxFit.cover,
-          errorBuilder: (_, _, _) => Container(
+          errorBuilder: (context, error, stackTrace) => Container(
             color: const Color(0xFFE8F1EA),
             child: const Center(child: Icon(Icons.image_not_supported_rounded)),
           ),
