@@ -41,46 +41,46 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyDc7NRYfgU4V-CSJm632jwkynJe6AP5DCY',
-    appId: '1:810235961716:web:1a9cfdda4dbbc5bf780c21',
-    messagingSenderId: '810235961716',
-    projectId: 'leafchat-bb3a2',
-    authDomain: 'leafchat-bb3a2.firebaseapp.com',
-    storageBucket: 'leafchat-bb3a2.firebasestorage.app',
-    measurementId: 'G-BNRF9P6YPV',
+    apiKey: 'XXX',
+    appId: 'XXX',
+    messagingSenderId: 'XXX',
+    projectId: 'leafchat-XXX',
+    authDomain: 'leafchat-XXXX.firebaseapp.com',
+    storageBucket: 'leafchat-XXXX.firebasestorage.app',
+    measurementId: 'G-XXXX',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyAdOjeYfSVv1wNY7LteETYVP47KMsWdS4U',
-    appId: '1:810235961716:android:7ee5eef3b3902cac780c21',
-    messagingSenderId: '810235961716',
+    apiKey: 'XXX-XXX',
+    appId: 'XXX-XXX',
+    messagingSenderId: 'XXX',
     projectId: 'leafchat-bb3a2',
-    storageBucket: 'leafchat-bb3a2.firebasestorage.app',
+    storageBucket: 'leafchat-XXXX.firebasestorage.app',
   );
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyCipGyKk--Ht0EwicrEtmt0gF_-zDCOtUs',
-    appId: '1:810235961716:ios:c2e4ed247f0b17d2780c21',
-    messagingSenderId: '810235961716',
-    projectId: 'leafchat-bb3a2',
-    storageBucket: 'leafchat-bb3a2.firebasestorage.app',
+    apiKey: 'XXXX',
+    appId: 'XXXX',
+    messagingSenderId: 'XXXX',
+    projectId: 'leafchat-XXXX',
+    storageBucket: 'leafchat-XXXX.firebasestorage.app',
     iosBundleId: 'com.example.appMsg',
   );
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyCipGyKk--Ht0EwicrEtmt0gF_-zDCOtUs',
-    appId: '1:810235961716:ios:c2e4ed247f0b17d2780c21',
-    messagingSenderId: '810235961716',
-    projectId: 'leafchat-bb3a2',
-    storageBucket: 'leafchat-bb3a2.firebasestorage.app',
+    apiKey: 'XXXXX',
+    appId: 'XXXXX',
+    messagingSenderId: 'XXXX',
+    projectId: 'leafchat-XXXX',
+    storageBucket: 'leafchat-XXXX.firebasestorage.app',
     iosBundleId: 'com.example.appMsg',
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyDc7NRYfgU4V-CSJm632jwkynJe6AP5DCY',
-    appId: '1:810235961716:web:1a9cfdda4dbbc5bf780c21',
-    messagingSenderId: '810235961716',
-    projectId: 'leafchat-bb3a2',
-    authDomain: 'leafchat-bb3a2.firebaseapp.com',
-    storageBucket: 'leafchat-bb3a2.firebasestorage.app',
-    measurementId: 'G-BNRF9P6YPV',
+    apiKey: 'XXXX',
+    appId: 'XXXX',
+    messagingSenderId: 'XXXX',
+    projectId: 'leafchat-XXX',
+    authDomain: 'leafchat-XXXXX.firebaseapp.com',
+    storageBucket: 'leafchat-XXXXX.firebasestorage.app',
+    measurementId: 'G-XXX',
   );
 }
