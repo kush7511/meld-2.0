@@ -34,9 +34,9 @@ class ProfileScreen extends StatelessWidget {
                 const SizedBox(height: 14),
                 Text(
                   'Kush Kumar',
-                  style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                        fontWeight: FontWeight.w900,
-                      ),
+                  style: Theme.of(
+                    context,
+                  ).textTheme.titleLarge?.copyWith(fontWeight: FontWeight.w900),
                 ),
                 const SizedBox(height: 4),
                 const Text('@kush - Available'),
@@ -44,8 +44,14 @@ class ProfileScreen extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 18),
-          const _ProfileAction(icon: Icons.star_rounded, title: 'Starred messages'),
-          const _ProfileAction(icon: Icons.devices_rounded, title: 'Linked devices'),
+          const _ProfileAction(
+            icon: Icons.star_rounded,
+            title: 'Starred messages',
+          ),
+          const _ProfileAction(
+            icon: Icons.devices_rounded,
+            title: 'Linked devices',
+          ),
           const _ProfileAction(icon: Icons.lock_rounded, title: 'Privacy'),
         ],
       ),
@@ -67,7 +73,10 @@ class _ProfileAction extends StatelessWidget {
         padding: EdgeInsets.zero,
         child: ListTile(
           leading: Icon(icon, color: Theme.of(context).colorScheme.primary),
-          title: Text(title, style: const TextStyle(fontWeight: FontWeight.w800)),
+          title: Text(
+            title,
+            style: const TextStyle(fontWeight: FontWeight.w800),
+          ),
           trailing: const Icon(Icons.chevron_right_rounded),
           onTap: () {},
         ),

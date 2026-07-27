@@ -25,14 +25,18 @@ class GroupsScreen extends ConsumerWidget {
           : ListView.separated(
               padding: const EdgeInsets.fromLTRB(20, 8, 20, 100),
               itemBuilder: (context, index) {
-                if (index == 0) return const AppSearchBar(hint: 'Search groups');
+                if (index == 0) {
+                  return const AppSearchBar(hint: 'Search groups');
+                }
                 final group = groups[index - 1];
                 return AppCard(
                   child: Row(
                     children: [
                       CircleAvatar(
                         radius: 28,
-                        backgroundColor: Theme.of(context).colorScheme.primaryContainer,
+                        backgroundColor: Theme.of(
+                          context,
+                        ).colorScheme.primaryContainer,
                         child: Icon(
                           Icons.groups_rounded,
                           color: Theme.of(context).colorScheme.primary,
@@ -45,7 +49,9 @@ class GroupsScreen extends ConsumerWidget {
                           children: [
                             Text(
                               group.name,
-                              style: const TextStyle(fontWeight: FontWeight.w900),
+                              style: const TextStyle(
+                                fontWeight: FontWeight.w900,
+                              ),
                             ),
                             const SizedBox(height: 4),
                             Text(

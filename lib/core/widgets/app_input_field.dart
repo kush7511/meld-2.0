@@ -7,6 +7,8 @@ class AppInputField extends StatelessWidget {
     this.keyboardType,
     this.prefixIcon,
     this.obscureText = false,
+    this.controller,
+    this.onChanged,
     super.key,
   });
 
@@ -15,10 +17,14 @@ class AppInputField extends StatelessWidget {
   final TextInputType? keyboardType;
   final IconData? prefixIcon;
   final bool obscureText;
+  final TextEditingController? controller;
+  final ValueChanged<String>? onChanged;
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      controller: controller,
+      onChanged: onChanged,
       keyboardType: keyboardType,
       obscureText: obscureText,
       decoration: InputDecoration(

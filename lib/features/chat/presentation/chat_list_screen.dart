@@ -53,7 +53,8 @@ class ChatListScreen extends ConsumerWidget {
             return const AppEmptyState(
               icon: Icons.forum_outlined,
               title: 'No conversations yet',
-              message: 'Start a new chat and your recent conversations will appear here.',
+              message:
+                  'Start a new chat and your recent conversations will appear here.',
             );
           }
 
@@ -75,8 +76,8 @@ class ChatListScreen extends ConsumerWidget {
                     child: Text(
                       'Pinned chats',
                       style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                            fontWeight: FontWeight.w900,
-                          ),
+                        fontWeight: FontWeight.w900,
+                      ),
                     ),
                   ),
                 ),
@@ -91,7 +92,10 @@ class ChatListScreen extends ConsumerWidget {
                             .map(
                               (chat) => ChatTile(
                                 chat: chat,
-                                onTap: () => Navigator.pushNamed(context, ChatScreen.routeName),
+                                onTap: () => Navigator.pushNamed(
+                                  context,
+                                  ChatScreen.routeName,
+                                ),
                               ),
                             )
                             .toList(),
@@ -105,8 +109,8 @@ class ChatListScreen extends ConsumerWidget {
                   child: Text(
                     'Recent',
                     style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                          fontWeight: FontWeight.w900,
-                        ),
+                      fontWeight: FontWeight.w900,
+                    ),
                   ),
                 ),
               ),
@@ -120,7 +124,10 @@ class ChatListScreen extends ConsumerWidget {
                           .map(
                             (chat) => ChatTile(
                               chat: chat,
-                              onTap: () => Navigator.pushNamed(context, ChatScreen.routeName),
+                              onTap: () => Navigator.pushNamed(
+                                context,
+                                ChatScreen.routeName,
+                              ),
                             ),
                           )
                           .toList(),
@@ -172,7 +179,10 @@ class _ChatSkeleton extends StatelessWidget {
         return AppCard(
           child: Row(
             children: [
-              const CircleAvatar(radius: 25, backgroundColor: Color(0xFFE8F1EA)),
+              const CircleAvatar(
+                radius: 25,
+                backgroundColor: Color(0xFFE8F1EA),
+              ),
               const SizedBox(width: 14),
               Expanded(
                 child: Column(
@@ -180,12 +190,18 @@ class _ChatSkeleton extends StatelessWidget {
                   children: [
                     FractionallySizedBox(
                       widthFactor: .55,
-                      child: Container(height: 12, decoration: _skeletonDecoration()),
+                      child: Container(
+                        height: 12,
+                        decoration: _skeletonDecoration(),
+                      ),
                     ),
                     const SizedBox(height: 10),
                     FractionallySizedBox(
                       widthFactor: .85,
-                      child: Container(height: 10, decoration: _skeletonDecoration()),
+                      child: Container(
+                        height: 10,
+                        decoration: _skeletonDecoration(),
+                      ),
                     ),
                   ],
                 ),

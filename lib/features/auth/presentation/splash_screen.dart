@@ -44,14 +44,18 @@ class _SplashScreenState extends State<SplashScreen> {
                   ),
                 ],
               ),
-              child: const Icon(Icons.chat_bubble_rounded, color: Colors.white, size: 42),
+              child: const Icon(
+                Icons.chat_bubble_rounded,
+                color: Colors.white,
+                size: 42,
+              ),
             ),
             const SizedBox(height: 18),
             Text(
               'LeafChat',
-              style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-                    fontWeight: FontWeight.w900,
-                  ),
+              style: Theme.of(
+                context,
+              ).textTheme.headlineMedium?.copyWith(fontWeight: FontWeight.w900),
             ),
             const SizedBox(height: 8),
             const Text('Messaging that feels calm.'),

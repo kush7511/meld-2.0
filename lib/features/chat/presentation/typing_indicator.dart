@@ -23,7 +23,9 @@ class TypingIndicator extends StatelessWidget {
               height: 6,
               margin: const EdgeInsets.symmetric(horizontal: 2),
               decoration: BoxDecoration(
-                color: Theme.of(context).colorScheme.primary.withValues(alpha: .35 + index * .2),
+                color: Theme.of(
+                  context,
+                ).colorScheme.primary.withValues(alpha: .35 + index * .2),
                 shape: BoxShape.circle,
               ),
             ),

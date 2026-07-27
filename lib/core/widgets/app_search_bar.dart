@@ -1,11 +1,7 @@
 import 'package:flutter/material.dart';
 
 class AppSearchBar extends StatelessWidget {
-  const AppSearchBar({
-    required this.hint,
-    this.onChanged,
-    super.key,
-  });
+  const AppSearchBar({required this.hint, this.onChanged, super.key});
 
   final String hint;
   final ValueChanged<String>? onChanged;

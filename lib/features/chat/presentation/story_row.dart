@@ -17,7 +17,10 @@ class StoryRow extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 20),
         itemBuilder: (context, index) {
           if (index == 0) {
-            return const _StoryItem(name: 'Your story', icon: Icons.add_rounded);
+            return const _StoryItem(
+              name: 'Your story',
+              icon: Icons.add_rounded,
+            );
           }
           final contact = contacts[index - 1];
           return _StoryItem(name: contact.name, isOnline: contact.isOnline);

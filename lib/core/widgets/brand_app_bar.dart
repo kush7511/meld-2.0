@@ -1,11 +1,7 @@
 import 'package:flutter/material.dart';
 
 class BrandAppBar extends StatelessWidget implements PreferredSizeWidget {
-  const BrandAppBar({
-    required this.title,
-    this.actions = const [],
-    super.key,
-  });
+  const BrandAppBar({required this.title, this.actions = const [], super.key});
 
   final String title;
   final List<Widget> actions;
@@ -18,9 +14,9 @@ class BrandAppBar extends StatelessWidget implements PreferredSizeWidget {
     return AppBar(
       title: Text(
         title,
-        style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-              fontWeight: FontWeight.w900,
-            ),
+        style: Theme.of(
+          context,
+        ).textTheme.headlineSmall?.copyWith(fontWeight: FontWeight.w900),
       ),
       actions: actions,
     );

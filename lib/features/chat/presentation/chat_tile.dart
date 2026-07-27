@@ -4,11 +4,7 @@ import '../../../core/widgets/app_avatar.dart';
 import '../data/chat_models.dart';
 
 class ChatTile extends StatelessWidget {
-  const ChatTile({
-    required this.chat,
-    required this.onTap,
-    super.key,
-  });
+  const ChatTile({required this.chat, required this.onTap, super.key});
 
   final ChatContact chat;
   final VoidCallback onTap;
@@ -30,7 +26,8 @@ class ChatTile extends StatelessWidget {
               style: const TextStyle(fontWeight: FontWeight.w800),
             ),
           ),
-          if (chat.isPinned) Icon(Icons.push_pin_rounded, size: 15, color: primary),
+          if (chat.isPinned)
+            Icon(Icons.push_pin_rounded, size: 15, color: primary),
         ],
       ),
       subtitle: Text(
@@ -46,13 +43,13 @@ class ChatTile extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.end,
         children: [
-          Text(chat.time, style: const TextStyle(fontSize: 12, color: Colors.black45)),
+          Text(
+            chat.time,
+            style: const TextStyle(fontSize: 12, color: Colors.black45),
+          ),
           const SizedBox(height: 7),
           if (chat.unreadCount > 0)
-            Badge(
-              backgroundColor: primary,
-              label: Text('${chat.unreadCount}'),
-            )
+            Badge(backgroundColor: primary, label: Text('${chat.unreadCount}'))
           else
             const Icon(Icons.done_all_rounded, size: 18, color: Colors.black26),
         ],

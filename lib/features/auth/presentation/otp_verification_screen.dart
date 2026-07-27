@@ -28,8 +28,8 @@ class OtpVerificationScreen extends StatelessWidget {
                   Text(
                     'Verify OTP',
                     style: Theme.of(context).textTheme.headlineSmall?.copyWith(
-                          fontWeight: FontWeight.w900,
-                        ),
+                      fontWeight: FontWeight.w900,
+                    ),
                   ),
                   const SizedBox(height: 8),
                   const Text('Enter the 6-digit code sent to your phone.'),

@@ -22,9 +22,6 @@ class AppButton extends StatelessWidget {
       );
     }
 
-    return FilledButton(
-      onPressed: onPressed,
-      child: Text(label),
-    );
+    return FilledButton(onPressed: onPressed, child: Text(label));
   }
 }

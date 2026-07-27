@@ -41,16 +41,22 @@ class CallsScreen extends ConsumerWidget {
                             leading: AppAvatar(name: call.name),
                             title: Text(
                               call.name,
-                              style: const TextStyle(fontWeight: FontWeight.w800),
+                              style: const TextStyle(
+                                fontWeight: FontWeight.w800,
+                              ),
                             ),
                             subtitle: Text(
                               call.time,
                               style: TextStyle(
-                                color: call.missed ? Colors.redAccent : Colors.black54,
+                                color: call.missed
+                                    ? Colors.redAccent
+                                    : Colors.black54,
                               ),
                             ),
                             trailing: Icon(
-                              call.isVideo ? Icons.videocam_rounded : Icons.call_rounded,
+                              call.isVideo
+                                  ? Icons.videocam_rounded
+                                  : Icons.call_rounded,
                               color: Theme.of(context).colorScheme.primary,
                             ),
                           ),

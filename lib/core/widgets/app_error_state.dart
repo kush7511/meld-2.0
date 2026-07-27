@@ -20,13 +20,17 @@ class AppErrorState extends StatelessWidget {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            const Icon(Icons.wifi_off_rounded, size: 52, color: Colors.redAccent),
+            const Icon(
+              Icons.wifi_off_rounded,
+              size: 52,
+              color: Colors.redAccent,
+            ),
             const SizedBox(height: 16),
             Text(
               'Something went wrong',
-              style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                    fontWeight: FontWeight.w800,
-                  ),
+              style: Theme.of(
+                context,
+              ).textTheme.titleLarge?.copyWith(fontWeight: FontWeight.w800),
             ),
             const SizedBox(height: 8),
             Text(
@@ -35,7 +39,11 @@ class AppErrorState extends StatelessWidget {
               style: const TextStyle(color: Colors.black54),
             ),
             const SizedBox(height: 20),
-            AppButton(label: 'Try again', icon: Icons.refresh_rounded, onPressed: onRetry),
+            AppButton(
+              label: 'Try again',
+              icon: Icons.refresh_rounded,
+              onPressed: onRetry,
+            ),
           ],
         ),
       ),

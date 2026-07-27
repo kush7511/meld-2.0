@@ -20,10 +20,7 @@ class AppTheme {
         onSurface: textDark,
       ),
       scaffoldBackgroundColor: background,
-      textTheme: textTheme.apply(
-        bodyColor: textDark,
-        displayColor: textDark,
-      ),
+      textTheme: textTheme.apply(bodyColor: textDark, displayColor: textDark),
       appBarTheme: const AppBarTheme(
         centerTitle: false,
         elevation: 0,
@@ -45,15 +42,22 @@ class AppTheme {
           borderRadius: BorderRadius.circular(20),
           borderSide: BorderSide.none,
         ),
-        contentPadding: const EdgeInsets.symmetric(horizontal: 18, vertical: 16),
+        contentPadding: const EdgeInsets.symmetric(
+          horizontal: 18,
+          vertical: 16,
+        ),
       ),
       filledButtonTheme: FilledButtonThemeData(
         style: FilledButton.styleFrom(
           backgroundColor: primary,
           foregroundColor: Colors.white,
           minimumSize: const Size.fromHeight(54),
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-          textStyle: textTheme.labelLarge?.copyWith(fontWeight: FontWeight.w700),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(20),
+          ),
+          textStyle: textTheme.labelLarge?.copyWith(
+            fontWeight: FontWeight.w700,
+          ),
         ),
       ),
       floatingActionButtonTheme: const FloatingActionButtonThemeData(
